@@ -11,11 +11,11 @@ phases:
   pre_build:
     commands:
       - echo "Installing dependencies..."
-      - pip install -r day-13/simple-python-app/requirements.txt
+      - pip install -r day-14/simple-python-app/requirements.txt
   build:
     commands:
       - echo "Running tests..."
-      - cd day-13/simple-python-app/
+      - cd day-14/simple-python-app
       - echo "Building Docker image..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "docker.io"
       - docker build -t "docker.io/rs871997/aws-cicd-flask:latest" .
