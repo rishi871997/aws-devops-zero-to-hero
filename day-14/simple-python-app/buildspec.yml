@@ -28,9 +28,3 @@ phases:
      - echo "Current working directory:"
      - pwd
      - echo "Build completed successfully!"
-
-artifacts:
-  files:
-    - '**/*'
-  base-directory: /codebuild/output/src4139464857/src/day-14/simple-python-app
-
