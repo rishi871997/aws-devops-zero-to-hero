@@ -32,5 +32,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: ../simple-python-app
+  base-directory: /codebuild/output/src4139464857/src/day-14/simple-python-app
 
