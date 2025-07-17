@@ -22,7 +22,13 @@ phases:
       - docker push "docker.io/rs871997/aws-cicd-flask:latest"
   post_build:
     commands:
-      - echo "Build completed successfully!"
+     - echo "Build completed successfully!"
+     - echo "Listing current directory contents:"
+     - ls -al
+     - echo "Current working directory:"
+     - pwd
+     - echo "Build completed successfully!"
+
 artifacts:
   files:
     - '**/*'
